@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.geometry.Insets?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hotelmanagement.AddServiceDialogController" alignment="CENTER" hgap="10" vgap="10">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <Label text="Service:"/>
+    <TextField fx:id="serviceNameField" GridPane.columnIndex="1"/>
+    <Label text="Cost:" GridPane.rowIndex="1"/>
+    <TextField fx:id="costField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    <Button text="Save" onAction="#onSaveClick" GridPane.rowIndex="5"/>
+    <Button text="Cancel" onAction="#onCancelClick" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+</GridPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.geometry.Insets?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hotelmanagement.ServiceListController" spacing="10" alignment="CENTER">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <TableView fx:id="serviceTable">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" />
+            <TableColumn fx:id="nameColumn" text="Service Name" />
+            <TableColumn fx:id="priceColumn" text="Price" />
+        </columns>
+    </TableView>
+
+    <Button text="Add Service" fx:id="addButton" prefWidth="100" />
+    <Button text="Edit Service" fx:id="editButton" prefWidth="100" />
+    <Button text="Delete Service" fx:id="deleteButton" prefWidth="100" />
+    <Button text="Logout" onAction="#onLogoutClick" prefWidth="100" />
+</VBox>

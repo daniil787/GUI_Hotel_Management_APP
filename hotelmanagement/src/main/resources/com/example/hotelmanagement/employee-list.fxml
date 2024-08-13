@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.geometry.Insets?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hotelmanagement.EmployeeListController" spacing="10" alignment="CENTER">
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30"/>
+    </padding>
+    <TableView fx:id="employeeTable" prefWidth="800">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID" prefWidth="100"/>
+            <TableColumn fx:id="nameColumn" text="Full Name" prefWidth="150"/>
+            <TableColumn fx:id="positionColumn" text="Position" prefWidth="150"/>
+            <TableColumn fx:id="addressColumn" text="Address" prefWidth="150"/>
+            <TableColumn fx:id="phoneColumn" text="Phone Number" prefWidth="150"/>
+            <TableColumn fx:id="salaryColumn" text="Salary" prefWidth="100"/>
+        </columns>
+    </TableView>
+
+    <Button text="Add Employee" fx:id="addButton" prefWidth="125"/>
+    <Button text="Edit Employee" fx:id="editButton" prefWidth="125"/>
+    <Button text="Delete Employee" fx:id="deleteButton" prefWidth="125"/>
+    <Button text="Back" onAction="#onLogoutClick" prefWidth="125"/>
+</VBox>

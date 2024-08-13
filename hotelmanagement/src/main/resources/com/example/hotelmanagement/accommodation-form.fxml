@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.ComboBox?>
+<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.hotelmanagement.AccommodationController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="Phone Number"/>
+    <HBox spacing="10.0">
+        <TextField fx:id="phoneNumberField"/>
+        <Button text="Check In" onAction="#onCheckInButtonClick"/>
+    </HBox>
+
+    <Label text="Full Name"/>
+    <TextField fx:id="fullNameField"/>
+
+    <Label text="Birth Date (dd.mm.yyyy)"/>
+    <TextField fx:id="birthDateField"/>
+
+    <Label text="Address"/>
+    <TextField fx:id="addressField"/>
+
+    <Label text="Room ID"/>
+    <TextField fx:id="roomIdField"/>
+
+    <Label text="Check-in Date"/>
+    <DatePicker fx:id="checkInDatePicker" />
+
+    <Label text="Check-out Date"/>
+    <DatePicker fx:id="checkOutDatePicker"/>
+
+    <Button text="Submit" onAction="#onSubmitButtonClick"/>
+    <Button text="Back" onAction="#onBackButtonClick"/>
+</VBox>
+
+
+

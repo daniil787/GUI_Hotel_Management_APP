@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="15" alignment="CENTER" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.hotelmanagement.ServiceController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <TableView fx:id="serviceTableView" prefWidth="450" prefHeight="400">
+        <columns>
+            <TableColumn fx:id="accommodationIdColumn" text="ID Accommodation"/>
+            <TableColumn fx:id="roomNumberColumn" text="Room Number"/>
+            <TableColumn fx:id="guestNamesColumn" text="Guest Names"/>
+            <TableColumn fx:id="servicesColumn" text="Services"/>
+        </columns>
+    </TableView>
+
+    <GridPane hgap="10" vgap="10">
+        <Label text="Accommodation ID:"/>
+        <TextField fx:id="accommodationIdField" GridPane.columnIndex="1"/>
+
+        <Label text="Service:" GridPane.rowIndex="1"/>
+        <ComboBox fx:id="serviceComboBox" onAction="#onServiceComboBoxAction" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <Label text="Service Provider:" GridPane.rowIndex="2"/>
+        <ComboBox fx:id="employeeComboBox" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+        <Label text="Start Date:" GridPane.rowIndex="3"/>
+        <DatePicker fx:id="startDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+        <Label text="End Date:" GridPane.rowIndex="4"/>
+        <DatePicker fx:id="endDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+        <Button text="Add Service" onAction="#onAddServiceButtonClick" GridPane.columnIndex="1" GridPane.rowIndex="5" prefWidth="100"/>
+        <Button text="Back" onAction="#onBackButtonClick" GridPane.rowIndex="5" prefWidth="100"/>
+    </GridPane>
+</VBox>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="15" alignment="CENTER" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.hotelmanagement.ReceptionistMainFormController">
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30"/>
+    </padding>
+    <Label fx:id="loginStatusLabel" text="Login success"/>
+    <Button text="View Available Rooms" onAction="#onViewAvailableRoomsButtonClick" prefWidth="150"/>
+    <Button text="Search Rooms" onAction="#onSearchRoomsButtonClick" prefWidth="150"/>
+    <Button text="Book Room" onAction="#onBookRoomButtonClick" prefWidth="150"/>
+    <Button text="Accommodation" onAction="#onAccommodationButtonClick" prefWidth="150"/>
+    <Button text="Service" onAction="#onServiceButtonClick" prefWidth="150"/>
+    <Button text="Payment" onAction="#onPaymentButtonClick" prefWidth="150"/>
+    <Button text="Back" onAction="#onBackButtonClick" prefWidth="150"/>
+    <Button text="Exit" onAction="#onExitButtonClick" prefWidth="150"/>
+</VBox>

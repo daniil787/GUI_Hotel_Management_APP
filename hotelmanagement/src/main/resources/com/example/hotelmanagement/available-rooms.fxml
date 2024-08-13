@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.hotelmanagement.AvailableRoomsController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <TableView fx:id="roomsTable" prefWidth="600" prefHeight="400">
+        <columns>
+            <TableColumn fx:id="roomNumberColumn" text="Room Number" prefWidth="100"/>
+            <TableColumn fx:id="bedsColumn" text="Beds" prefWidth="100"/>
+            <TableColumn fx:id="typeColumn" text="Type" prefWidth="100"/>
+            <TableColumn fx:id="amenityColumn" text="Amenities" prefWidth="150"/>
+            <TableColumn fx:id="costColumn" text="Cost" prefWidth="150"/>
+        </columns>
+    </TableView>
+    <Button text="Back" onAction="#backToReceptionistMenu" prefWidth="200"/>
+</VBox>
